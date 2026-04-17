@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: 127.0.0.1
--- 生成日時: 2026-04-16 09:03:57
+-- 生成日時: 2026-04-17 13:49:12
 -- サーバのバージョン： 10.4.32-MariaDB
 -- PHP のバージョン: 8.2.12
 
@@ -39,17 +39,17 @@ CREATE TABLE `loose_stones` (
   `横：width (mm)` decimal(6,3) NOT NULL,
   `厚み：depth (mm)` decimal(6,3) NOT NULL,
   `モース硬度 (Mohs hardness)` decimal(3,1) NOT NULL,
-  `カラーチェンジ ( Color change)` tinyint(1) NOT NULL DEFAULT 0,
+  `カラーチェンジ (Color change)` tinyint(1) NOT NULL DEFAULT 0,
   `加熱処理 (Heat Treatment)` tinyint(1) NOT NULL DEFAULT 0,
   `加工処理 (Processing)` varchar(50) NOT NULL,
-  `処理詳細 (Processing details)` text NOT NULL
+  `処理詳細 (memo)` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- テーブルのデータのダンプ `loose_stones`
 --
 
-INSERT INTO `loose_stones` (`id`, `鉱物名 (Mineral name)`, `宝石名 (Gem name)`, `産地 (Production area)`, `カラー (Color)`, `形状 (Cut)`, `カラット (Carat)`, `縦：Height (mm)`, `横：width (mm)`, `厚み：depth (mm)`, `モース硬度 (Mohs hardness)`, `カラーチェンジ ( Color change)`, `加熱処理 (Heat Treatment)`, `加工処理 (Processing)`, `処理詳細 (Processing details)`) VALUES
+INSERT INTO `loose_stones` (`id`, `鉱物名 (Mineral name)`, `宝石名 (Gem name)`, `産地 (Production area)`, `カラー (Color)`, `形状 (Cut)`, `カラット (Carat)`, `縦：Height (mm)`, `横：width (mm)`, `厚み：depth (mm)`, `モース硬度 (Mohs hardness)`, `カラーチェンジ (Color change)`, `加熱処理 (Heat Treatment)`, `加工処理 (Processing)`, `処理詳細 (memo)`) VALUES
 (1, 'ダイヤモンド', 'ダイヤモンド(金剛石)', 'ロシア産\r\n', '(D)無色透明', 'ラウンドブリリアンカット', 0.255, 4.100, 4.100, 2.400, 10.0, 0, 0, '', ''),
 (2, 'ダイヤモンド', 'ダイヤモンド(金剛石)', 'オーストラリア産（アーガイル鉱山）', '(5PP)ピンク', 'ペアシェイプ', 0.160, 4.500, 3.060, 1.910, 10.0, 0, 0, '', ''),
 (3, 'ガーネット', 'ベキリーブルーガーネット(カラーチェンジガーネット)', 'マダガスカル産', 'パープル', 'ラウンドカット', 0.182, 3.500, 3.500, 2.100, 7.5, 1, 0, '', ''),
