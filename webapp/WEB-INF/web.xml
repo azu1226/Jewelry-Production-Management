@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ↑ XML宣言「このファイルはXMLという形式で書かれた、文字コードUTF-8のファイルですよ」-->
+<!-- Tomcatにアプリの構成を伝えるための設計図 -->
+
+<!--Webアプリの設定であることを示すタグ-->
+<web-app xmlns="https://jakarta.ee" version="5.0">
+    <!--アプリの名前-->
+    <display-name>jewelry Management</display-name>
+</web-app>
+
+
