@@ -44,10 +44,8 @@ public class GemServlet extends HttpServlet {
         //*伝言役（st）」に「注文票（sql）」を渡し、「これをMySQLに届けて、結果を持ってきて！」と命令
 
 
-
         //取り出す作業
         while (rs.next()) {
-
             String mineralName = rs.getString("鉱物名 (Mineral name)");
             String gemName = rs.getString("宝石名 (Gem name)");
             String area = rs.getString("産地 (Production area)");
@@ -95,7 +93,7 @@ public class GemServlet extends HttpServlet {
     // request.setAttribute("price",1500); //荷札を張ってデータをセット
 
     request.setAttribute("gemList",gemList);
-    request.getRequestDispatcher("/index.jsp").forward(request,response); //JSPにバトンタッチ
+    request.getRequestDispatcher("/gem_list.jsp").forward(request,response); //JSPにバトンタッチ
 }
 }
 

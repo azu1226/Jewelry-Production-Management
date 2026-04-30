@@ -67,8 +67,7 @@ public class DbConnectTest {
                 gemList.add(gem);
             }
             //デバッグ◎
-            System.out.println("リストサイズ:" + gemList.size());
-
+           // System.out.println("リストサイズ:" + gemList.size());
 
         } catch (Exception e){
             System.out.println("接続に失敗しました");

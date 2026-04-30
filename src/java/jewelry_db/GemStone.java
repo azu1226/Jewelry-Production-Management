@@ -52,8 +52,4 @@ public class GemStone { //
     public String getProcessing() {return processing;}
     public String getMemo() {return memo;}
     //Java上でデータはいじらないの(変更する際はDB上)でセッターは不要
-
-
-
-
 }
