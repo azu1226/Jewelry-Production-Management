@@ -1,4 +1,4 @@
-package jewelry_db;
+package jewelry_db.date;
 
 public class GemStone { //
     private String mineralName;
